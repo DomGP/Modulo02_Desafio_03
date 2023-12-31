@@ -1,10 +1,15 @@
+/* Importando letras */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Sans&family=Roboto&display=swap");
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*  */
+/* Formato movil  */
+body{
+    font-family: 'Montserrat';
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -18,31 +23,42 @@ nav div{
     display: flex;
     padding: 10px;
 }
-.nav-list{
-    display: none;
+nav h1{
+    font-size: 2.5em;
 }
 nav img{
-    width: 25px;
-    height: 25px;
+    width: 2.5em;
+    height: 2.5em;
+}
+#barras{
+    padding-right: 0.5em;
+}
+.nav-list{
+    display: none;
 }
 aside{
     display: flex;
     flex-direction: column;
     align-items: center;
     grid-area: aside;
-    background: #cdd5d4;
+    background: #bd7a9d;
 }
 aside h3{
     padding-top: 0.3em;
     padding-bottom: 0.2em;
+    font-size:1.5em;
 }
 aside select{
-    padding-right: 4em;
-    padding-left: 4em;
+    padding:0.8em 8em 0.8em 0.5em;
+    margin-bottom: 1em;
+    border: none;
+    color: rgb(121, 121, 121);
+    border-radius: 10px;
+    font-size: 1em;
 }
 main{
     grid-area: main;
-    background: #eff7f6;
+    background: #ffe8d0;
 }
 .grid-cards{
     display: grid;
@@ -70,13 +86,54 @@ main{
     object-fit: cover;
     border-radius: 10px;
 }
+.card2{
+    display: none;
+}
+.card3{
+    display: none;
+}
+.style-numbers{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+.p-button, .p-normal, .p-special{
+    padding: 0.7em;
+} 
+.p-normal{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background: white;
+}
+.p-special{
+    border:1px solid lightgray;
+    background: white;
+}
+.p-button{
+    border: 1px solid lightgray;
+    background: white;
+}
+.p-button:active{
+    background: lightgray;
+}
+main button{
+    margin: 1em 0 1em 0;
+    padding: 0.5em 2em 0.5em 2em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #9f6e6a;
+    color: white;
+}
+button:active{
+    background-color: #6d4d4a;
+}
 footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-area: footer;
-    background: #ffa8bd;
+    background: #bd7a9d;
     color: white;
     padding: 1em;
 }
@@ -114,9 +171,9 @@ header{
     .nav-list p{
         margin-right: 2em;
     }
-    .fa-bars{
+    #barras, #barras::before {
         display: none;
-    }
+    } 
     .grid-cards{
         display: grid;
         grid-template-columns: auto auto;
@@ -133,6 +190,10 @@ header{
         margin-left: 2em;
         margin-top: 2em;
         background:white ;
+    }
+    
+    .card3{
+        display: none;
     }
     .card-img{
         width: 100%;
@@ -152,21 +213,30 @@ header{
         "nav aside"
         "nav main"
         "footer main";
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-columns: 2.2fr 9.8fr;
         height:100vh;
     }
     nav{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
     }
     .nav-list{
         display: flex;
         flex-direction: column;
     }
-    .fa-bars{
-        display: none;
+    .nav-list p{
+        padding: 1em;
+        font-size:large;
     }
+    aside select{
+        padding:0.8em 70em 0.8em 0.5em ;
+    }
+    #barras, #barras::before {
+        display: none;
+    } 
     .grid-cards{
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -181,7 +251,7 @@ header{
         border-radius: 10px;
         margin-right: 2em;
         margin-left: 2em;
-        margin-top: 2em;
+        margin-top: 1em;
         background:white ;
     }
     .card-img{
@@ -191,5 +261,8 @@ header{
         background-position: center;
         object-fit: cover;
         border-radius: 10px;
+    }
+    .style-numbers {
+        margin-top: 0;
     }
 }
