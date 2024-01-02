@@ -16,7 +16,7 @@ header{
     "aside"
     "main"
     "footer";
-    grid-template-rows: 1fr 1fr 9fr 1fr;
+    grid-template-rows: 1fr 1fr 8fr 1fr;
     height: 100vh;
 }
 nav{
