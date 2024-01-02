@@ -14,7 +14,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     grid-area: nav;
-    background: #ffa8bd;
+    background: #bb88a2;
     color:white;
     padding-right:10px ;
 }
@@ -40,7 +40,7 @@ aside{
     flex-direction: column;
     align-items: center;
     grid-area: aside;
-    background: #bd7a9d;
+    background: #e6bbbb;
 }
 aside h3{
     padding-top: 0.3em;
@@ -57,7 +57,7 @@ aside select{
 }
 main{
     grid-area: main;
-    background: lightgrey;
+    background: #EAD7D7;
 }
 .grid-cards{
     display: grid;
@@ -89,12 +89,12 @@ main{
 .card h3{
     text-align: center;
 }
-/* .card2{
+.card2{
     display: none;
 }
 .card3{
     display: none;
-} */
+} 
 .style-numbers{
     display: flex;
     justify-content: center;
@@ -199,9 +199,9 @@ header{
         max-width: 21rem;
     }
     
-    /* .card3{
+    .card3{
         display: none;
-    } */
+    } 
 }
 
 /* MEDIDA PANTALLA GRANDE */
