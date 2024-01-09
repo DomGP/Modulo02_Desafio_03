@@ -263,4 +263,7 @@ footer{
     .style-numbers {
         margin-top: 0;
     }
+    footer p{
+        text-align: center;
+    }
 }
