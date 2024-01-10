@@ -157,23 +157,25 @@ footer{
     color: white;
     padding: 1em;
 }
+footer p{
+    text-align: center;
+}
 
 /* MEDIDA PANTALLA MEDIANA */
 @media(min-width:576px){
     header{
-        display: grid;
+        /* display: grid; */
         grid-template-areas: 
         "nav nav"
         "aside main"
         "footer footer";
-        height: 100vh;
+        /* height: 100vh; */
         grid-template-rows: 1fr 10fr 1fr;
         grid-template-columns: 2fr 10fr;
     }
     nav{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
+        /* align-items: flex-start; */
+        /* justify-content: space-between; */
         padding-top: 1em;
     }
     .nav-list{
@@ -187,12 +189,12 @@ footer{
     }
     
     .grid-cards{
-        display: grid;
+        /* display: grid; */
         grid-template-columns: auto auto;
-        gap: 10px;
-        justify-items: center;
+        /* gap: 10px;
+        justify-items: center; */
     }
-    .card{
+    /* .card{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -203,7 +205,7 @@ footer{
         margin-top: 2em;
         background:white ;
         max-width: 21rem;
-    }
+    } */
     
     /* .card3{
         display: none;
@@ -213,19 +215,19 @@ footer{
 /* MEDIDA PANTALLA GRANDE */
 @media(min-width:992px){
     header{
-        display: grid;
+        /* display: grid; */
         grid-template-areas:
         "nav aside"
         "nav main"
         "footer main";
-        height:100vh;
+        /* height:100vh; */
         grid-template-rows: 1fr 10fr 1fr;
         grid-template-columns: 2.2fr 9.8fr;
     }
     nav{
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         justify-content: flex-start;
     }
     .nav-list{
@@ -236,19 +238,19 @@ footer{
         padding: 1em;
         font-size:large;
     }
-    aside select{
+    /* aside select{
         padding:0.8em 40em 0.8em 0.5em ;
-    }
+    } */
     #barras, #barras::before {
         display: none;
     } 
     .grid-cards{
-        display: grid;
+        /* display: grid; */
         grid-template-columns: auto auto auto auto;
-        gap: 10px;
-        justify-items: center;
+        /* gap: 10px;
+        justify-items: center; */
     }
-    .card{
+    /* .card{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -259,11 +261,9 @@ footer{
         margin-top: 1em;
         background:white ;
         max-width: 21rem;
-    }
+    } */
     .style-numbers {
         margin-top: 0;
     }
-    footer p{
-        text-align: center;
-    }
+    
 }
